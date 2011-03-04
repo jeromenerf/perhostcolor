@@ -23,7 +23,7 @@ The way I primarily use this script, YMMV :
 2. create a wrapper script for ssh :
 
 	#!/bin/sh 
-	# ~/bin/ssh
+	# ~/bin/ssh.sh
 	# A wrapper for ssh
 	
 	# Set specific bgcolor
@@ -36,7 +36,7 @@ The way I primarily use this script, YMMV :
 3. create an alias for this wrapper script (in ~/.bashrc for me)
 
 	# ~/.bashrc 
-	alias ssh="~/bin/ssh"
+	alias ssh="~/bin/ssh.sh"
 
 ## Mandatory screenshot 
 

@@ -1,5 +1,5 @@
 #!/bin/sh 
-# ~/bin/ssh
+# ~/bin/ssh.sh
 # A wrapper for ssh
 
 # Set specific bgcolor
