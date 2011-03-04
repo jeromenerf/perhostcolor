@@ -13,7 +13,7 @@ script for irssi.
 
 ## Usage 
 
-	perhostcolor.sh [somestring]
+		perhostcolor.sh [somestring]
 
 ## How to use it with SSH
 
@@ -22,25 +22,25 @@ The way I primarily use this script, YMMV :
 1. copy this script in your $PATH (~/bin for instance)
 2. create a wrapper script for ssh :
 
-	#!/bin/sh 
-	# ~/bin/ssh.sh
-	# A wrapper for ssh
-	
-	# Set specific bgcolor
-	perhostcolor.sh $@
-	# ssh to ...
-	/usr/bin/ssh $@
-	# Reset to original bgcolor
-	perhostcolor.sh
+		#!/bin/sh 
+		# ~/bin/ssh.sh
+		# A wrapper for ssh
+		
+		# Set specific bgcolor
+		perhostcolor.sh $@
+		# ssh to ...
+		/usr/bin/ssh $@
+		# Reset to original bgcolor
+		perhostcolor.sh
 
 3. create an alias for this wrapper script (in ~/.bashrc for me)
 
-	# ~/.bashrc 
-	alias ssh="~/bin/ssh.sh"
+		# ~/.bashrc 
+		alias ssh="~/bin/ssh.sh"
 
 ## Mandatory screenshot 
 
-![perhostcolor screenshot](screenshot.png "Screenshot")
+![perhostcolor screenshot](https://github.com/jeromenerf/perhostcolor/blob/master/screenshot.png?raw=true "Screenshot")
 
 ## Limitations 
 
