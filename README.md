@@ -4,12 +4,11 @@ A simple shell script to change the background term colour based on the length
 of the arguments ($@)
 
 This script was originally written to facilitate visual distinction between
-local and many remote shells. 
+local and multiple remote shells. 
 
 Being a [DWM](http://dwm.suckless.org) (one of many tiling window manager for
-X11) who enjoys having lots of open xterminals logged to different hosts, I was
-looking for a simple and hassle-free solution, very much like the nickcolor
-script for irssi.
+X11) user who enjoys having lots of open xterminals logged to different hosts, I was
+looking for a simple and hassle-free solution, à la `nickcolor.pl` script for irssi.
 
 ## Usage 
 
@@ -19,9 +18,10 @@ script for irssi.
 
 The way I primarily use this script, YMMV :
 
-1. copy this script in your $PATH (~/bin for instance)
+1. copy this script in your `$PATH` (`~/bin` for instance)
 2. create a wrapper script for ssh :
 
+```sh
 		#!/bin/sh 
 		# ~/bin/ssh.sh
 		# A wrapper for ssh
@@ -32,11 +32,14 @@ The way I primarily use this script, YMMV :
 		/usr/bin/ssh $@
 		# Reset to original bgcolor
 		perhostcolor.sh
+```
 
 3. create an alias for this wrapper script (in ~/.bashrc for me)
 
+```sh
 		# ~/.bashrc 
 		alias ssh="~/bin/ssh.sh"
+```
 
 ## Mandatory screenshot 
 
@@ -51,7 +54,7 @@ manpage.
 Thus, it has not been tested thoroughly and might not work as-is on your
 favourite terminal. 
 
-# Issues ?
+# Issues?
 
 - contact me on IRC (freenode or oftc) as jerome or jer0me
 - mail jerome at gcu.info
